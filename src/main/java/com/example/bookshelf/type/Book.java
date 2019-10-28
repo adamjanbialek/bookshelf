@@ -1,18 +1,18 @@
 package com.example.bookshelf.type;
 
 public class Book {
-    private int id;
+    private long id;
     private String title;
     private String author;
     private int pagesSum;
     private int yearOfPublished;
     private String publishingHouse;
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
