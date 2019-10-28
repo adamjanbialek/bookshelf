@@ -21,8 +21,8 @@ public class BookController {
 
     public NanoHTTPD.Response serveGetBookRequest(NanoHTTPD.IHTTPSession session) {
         Map<String,List<String>> requestParams = session.getParameters();
-        if(requestParams.containsKey("bookId")) {
-            List<String> bookIdParams = requestParams.get("bookId");
+        if(requestParams.containsKey("id")) {
+            List<String> bookIdParams = requestParams.get("id");
             String bookIdParam = bookIdParams.get(0);
             long bookId = 0;
 
